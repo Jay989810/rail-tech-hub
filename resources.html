@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rail-Tech Hub</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+  <script>
+  // Check if the user is logged in
+  if (localStorage.getItem("isLoggedIn") !== "true") {
+      alert("⚠️ You must sign in first!");
+      window.location.href = "joinus.html"; // Redirect to sign-in page
+  }
+</script>
+</head>
+<body>
+
+  <!-- Header with Hidden Menu -->
+  <header>
+    <div class="logo">🚆 Rail-Tech Hub</div>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="forum.html">Forum</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="joinus.html">Join Us</a></li>
+        <li><a href="nares.html">NARES</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="resources-hero">
+      <h2>Resources</h2>
+      <p>Your gateway to valuable study materials, tutorials, and tools for railway engineering.</p>
+      <input type="text" id="search-resources" placeholder="Search resources...">
+    </section>
+
+    <!-- Resource Categories -->
+    <section class="resource-categories">
+      <div class="container">
+        <h3>Categories</h3>
+        <div class="categories">
+          <div class="category-card">
+            <h4>Lecture Notes</h4>
+            <p>Access comprehensive notes from top lecturers.</p>
+            <a href="#" class="btn">Explore Notes</a>
+          </div>
+          <div class="category-card">
+            <h4>Video Tutorials</h4>
+            <p>Watch step-by-step tutorials to enhance your skills.</p>
+            <a href="#" class="btn">Explore Videos</a>
+          </div>
+          <div class="category-card">
+            <h4>E-books</h4>
+            <p>Download e-books for in-depth learning.</p>
+            <a href="#" class="btn">Explore E-books</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Resources -->
+    <section class="featured-resources">
+      <div class="container">
+        <h3>Featured Resources</h3>
+        <div class="resource-grid">
+          <div class="resource-item">
+            <img src="../images/resource1.jpg" alt="Lecture Notes">
+            <h4>Track Design Basics</h4>
+            <p>A comprehensive guide to railway track design.</p>
+            <a href="#" class="btn">Download PDF</a>
+          </div>
+          <div class="resource-item">
+            <img src="../images/resource2.jpg" alt="Video Tutorial">
+            <h4>Signal Engineering 101</h4>
+            <p>Video tutorial on railway signal systems.</p>
+            <a href="#" class="btn">Watch Now</a>
+          </div>
+          <div class="resource-item">
+            <img src="../images/resource3.jpg" alt="E-book">
+            <h4>Railway Safety Standards</h4>
+            <p>An essential e-book for safety best practices.</p>
+            <a href="#" class="btn">Download E-book</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Rail-Connect Hub. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

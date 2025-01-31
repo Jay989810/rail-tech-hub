@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rail-Tech Hub</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+  <script>
+function checkLogin(page) {
+    if (localStorage.getItem("isLoggedIn") === "true") {
+        window.location.href = page; // Allow access
+    } else {
+        alert("⚠️ Please sign in first!");
+        window.location.href = "joinus.html"; // Redirect to login page
+    }
+}
+</script>
+</head>
+<body>
+
+  <!-- Header with Hidden Menu -->
+  <header>
+    <div class="logo">🚆 Rail-Tech Hub</div>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <nav class="nav-menu">
+      <button onclick="logout()">Logout</button>
+
+<script>
+function logout() {
+    localStorage.removeItem("isLoggedIn"); // Clear session
+    alert("✅ Logged out successfully!");
+    window.location.href = "joinus.html"; // Redirect to login page
+}
+</script>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="forum.html">Forum</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="joinus.html">Join Us</a></li>
+        <li><a href="nares.html">NARES</a></li>
+      </ul>
+    </nav>
+  </header>
+ <section id="welcome">
+    <h2>Welcome to Railway Engineering Technology Hub</h2>
+    <p>Welcome to the Railway Engineering Hub (REH)!
+We are thrilled to have you join this growing community of railway engineering enthusiasts, student,and professionals. REH is a space for collaboration,knowledge sharing, and innovation in railway technology.Here, you'll find valuable resources, engaging discussions, and opportunities to connect with like-minded individuals passionate about shaping the future of railway engineering.</p>
+<p><strong>Let’s innovate, connect, and grow—welcome aboard!</strong></p>
+  </section>
+<!-- Image Slider -->
+  <div class="slider-container">
+    <div class="slides">
+      <div class="slide">
+        <img src="images/railway1.jpg" alt="High-Speed Railway">
+        <div class="text">Advancing Railway Engineering Technology for a Sustainable Future</div>
+      </div>
+      <div class="slide">
+        <img src="images/railway2.jpg" alt="Railway Construction">
+        <div class="text">Innovations in Track Design and Safety Systems</div>
+      </div>
+      <div class="slide">
+        <img src="images/railway3.jpg" alt="Railway Students">
+        <div class="text">Empowering Future Engineers with Quality Learning Resources</div>
+      </div>
+    </div>
+  </div>
+  <!-- About Us Section -->
+  <section class="about">
+    <h2>About Us</h2>
+    <p>The Railway Engineering Hub (REH) is the official platform of the Railway Engineering Technology Department at Kaduna Polytechnic, dedicated to fostering knowledge sharing, collaboration, and sustainable growth within the field of railway engineering.</p>
+    <p>Our mission is to bridge the gap between theoretical knowledge and practical application, ensuring that students and industry stakeholders have access to cutting-edge resources, expert insights, and opportunities for professional growth.</p>
+  </section>
+
+  <!-- Vision Section -->
+  <section class="vision">
+    <h2>Our Vision</h2>
+    <p>To establish a thriving railway engineering ecosystem that empowers students and professionals with the knowledge, skills, and network necessary to drive innovation and sustainability in the railway sector.</p>
+  </section>
+
+  <!-- Objectives Section -->
+  <section class="objectives">
+    <h2>Our Objectives</h2>
+    <ul>
+      <li><strong>Collaboration & Networking:</strong> Provide a platform for students, lecturers, and industry professionals to exchange ideas and collaborate on railway projects.</li>
+      <li><strong>Educational Resources:</strong> Offer a comprehensive library of railway engineering materials, including research papers, textbooks, project reports, and industry standards.</li>
+      <li><strong>Skill Development:</strong> Organize workshops, training programs, and hands-on projects to enhance technical skills in railway engineering and technology.</li>
+      <li><strong>Career Growth:</strong> Connect students with internship opportunities, job listings, and mentorship programs to help them advance in the railway sector.</li>
+      <li><strong>Innovation & Research:</strong> Promote research-driven solutions for railway challenges, including infrastructure development, safety, and sustainability.</li>
+    </ul>
+  </section>
+
+  <!-- History Section -->
+  <section class="history">
+    <h2>History of Railway Engineering Technology at Kaduna Polytechnic</h2>
+    <p>Kaduna Polytechnic has a rich legacy of engineering education, playing a significant role in Nigeria’s technological advancement.</p>
+    <p>Although the department is still in its early stages, with fewer than 100 students, it is rapidly gaining recognition for its commitment to high-quality education and industry-relevant training.</p>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <h2>What You’ll Find on REH</h2>
+    <ul>
+      <li><strong>Discussion Forum:</strong> A dedicated space where students, lecturers, and professionals can share ideas and collaborate.</li>
+      <li><strong>Resource Library:</strong> A collection of ebooks, research papers, lecture notes, and industry whitepapers.</li>
+      <li><strong>Events & Workshops:</strong> Stay updated on upcoming conferences and hands-on training sessions.</li>
+      <li><strong>Career Opportunities:</strong> Access internship programs, job listings, and mentorship opportunities.</li>
+      <li><strong>Student Projects & Innovations:</strong> Showcasing student-led projects and railway sector contributions.</li>
+      <li><strong>News & Updates:</strong> Stay informed with the latest railway technology trends and policies.</li>
+    </ul>
+  </section>
+
+  <!-- Join Us Section -->
+  <section class="join">
+    <h2>Why Join REH?</h2>
+    <p>✅ Connect with industry leaders and railway professionals</p>
+    <p>✅ Enhance your skills with real-world railway projects</p>
+    <p>✅ Access exclusive research and learning materials</p>
+    <p>✅ Be part of a growing community shaping the future of railway engineering</p>
+  </section>
+
+</body>
+</html>
+</body>
+</html>

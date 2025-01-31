@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forum | Rail-Tech Hub</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+<script>
+  // Check if the user is logged in
+  if (localStorage.getItem("isLoggedIn") !== "true") {
+      alert("⚠️ You must sign in first!");
+      window.location.href = "joinus.html"; // Redirect to sign-in page
+  }
+</script>
+</head>
+<body>
+
+  <header>
+    <div class="logo">🚆 Rail-Tech Hub</div>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="forum.html">Forum</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="joinus.html">Join Us</a></li>
+        <li><a href="nares.html">NARES</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="forum">
+    <h1>Rail-Tech Hub Forum</h1>
+    <p>Engage in discussions, ask questions, and share your knowledge!</p>
+
+    <!-- Forum Post Form -->
+    <div class="forum-form">
+      <h2>Start a New Discussion</h2>
+      <input type="text" id="post-title" placeholder="Enter topic title">
+      <textarea id="post-content" placeholder="Write your discussion..."></textarea>
+      <button onclick="addPost()">Post Discussion</button>
+    </div>
+
+    <!-- Forum Posts -->
+    <h2>Recent Discussions</h2>
+    <div id="forum-posts">
+      <div class="forum-post">
+        <h3>How to Optimize Railway Track Designs?</h3>
+        <p>Posted by John Doe | 12 Replies</p>
+      </div>
+
+      <div class="forum-post">
+        <h3>Best Practices for Railway Safety Standards</h3>
+        <p>Posted by Jane Smith | 8 Replies</p>
+      </div>
+      
+      <div class="forum-post">
+        <h3>Upcoming Trends in Railway Engineering</h3>
+        <p>Posted by Admin | 20 Replies</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
