@@ -1,0 +1,106 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #003366, #0099ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+}
+
+/* Header */
+.header h1 {
+    color: #003366;
+    margin-bottom: 5px;
+}
+.header p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Toggle Buttons */
+.toggle {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.toggle button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+.toggle .active {
+    background: #003366;
+    color: white;
+}
+
+/* Forms */
+.form-container {
+    display: block;
+}
+.hidden {
+    display: none;
+}
+
+h2 {
+    color: #003366;
+    font-size: 22px;
+}
+
+/* Input Fields */
+.input-group {
+    position: relative;
+    margin: 15px 0;
+}
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    padding-left: 35px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+.input-group i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #003366;
+}
+
+/* Buttons */
+.btn {
+    background: #003366;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover {
+    background: #002244;
+}
+
+/* Switch Text */
+.switch-text {
+    font-size: 14px;
+    margin-top: 10px;
+}
+.switch-text span {
+    color: #0099ff;
+    cursor: pointer;
+    font-weight: bold;
+}
